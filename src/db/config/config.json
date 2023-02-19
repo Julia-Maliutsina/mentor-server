@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "fed196cba",
+    "database": "tmm_dev",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "fed196cba",
+    "database": "tmm_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "fed196cba",
+    "database": "tmm",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
