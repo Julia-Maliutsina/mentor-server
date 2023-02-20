@@ -4,14 +4,16 @@
     "password": "fed196cba",
     "database": "tmm_dev",
     "host": "localhost",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "port": 5000
   },
   "test": {
     "username": "postgres",
     "password": "fed196cba",
     "database": "tmm_test",
     "host": "localhost",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "port": 5000
   },
   "production": {
     "username": "postgres",
