@@ -7,6 +7,7 @@ const Language = sequelize.define(
     language: DataTypes.STRING,
   },
   {
+    //@ts-ignore
     timestamps: {
       createdAt: 'created_at',
       updatedAt: false,

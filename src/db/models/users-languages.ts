@@ -14,14 +14,10 @@ const UserLanguage = sequelize.define(
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: 'User',
-      referencesKey: 'id',
     },
     language_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: 'Language',
-      referencesKey: 'id',
     },
   },
   {

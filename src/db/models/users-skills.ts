@@ -14,14 +14,10 @@ const UserSkill = sequelize.define(
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: 'User',
-      referencesKey: 'id',
     },
     skill_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: 'Skill',
-      referencesKey: 'id',
     },
   },
   {

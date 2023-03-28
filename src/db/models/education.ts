@@ -11,6 +11,7 @@ const Education = sequelize.define(
   },
   {
     tableName: 'education',
+    //@ts-ignore
     timestamps: {
       createdAt: 'created_at',
       updatedAt: 'updated_at',

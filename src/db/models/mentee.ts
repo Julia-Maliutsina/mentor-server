@@ -17,19 +17,13 @@ const Mentee = sequelize.define(
     },
     about: DataTypes.TEXT,
     last_seen_online: DataTypes.DATE,
-    created_at: {
-      type: 'TIMESTAMP',
-      defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
-      allowNull: false,
-    },
-    updated_at: {
-      type: 'TIMESTAMP',
-      defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
-      allowNull: false,
-    },
   },
   {
-    timestamps: false,
+    //@ts-ignore
+    timestamps: {
+      createdAt: 'created_at',
+      updatedAt: 'updated_at',
+    },
     tableName: 'mentees',
   },
 );
