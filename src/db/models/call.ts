@@ -21,14 +21,9 @@ const Call = sequelize.define(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    created_at: {
-      type: 'TIMESTAMP',
-      defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
-      allowNull: false,
-    },
+    createdAt: { type: DataTypes.DATE, field: 'created_at' },
   },
   {
-    timestamps: false,
     tableName: 'calls',
   },
 );

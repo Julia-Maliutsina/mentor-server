@@ -34,14 +34,14 @@ const User = sequelize.define(
     },
     cookie: DataTypes.STRING,
     cookie_expires_at: DataTypes.DATE,
+    createdAt: { type: DataTypes.DATE, field: 'created_at' },
+    updatedAt: { type: DataTypes.DATE, field: 'updated_at' },
   },
   {
     tableName: 'users',
-    //@ts-ignore
-    timestamps: {
-      createdAt: 'created_at',
-      updatedAt: 'updated_at',
-    },
+    timestamps: true,
+    underscored: true,
+    paranoid: false,
   },
 );
 
