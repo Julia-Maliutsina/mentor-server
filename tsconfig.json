@@ -4,6 +4,7 @@
     "module": "es6",
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "rootDir": "src",

@@ -10,7 +10,7 @@ import {
   Experience,
   Job,
 } from '../db/models/index.js';
-import ROLES from '../../src/constants/roles.js';
+import ROLES from '../constants/roles.js';
 
 const getMentors = async ({ price, experience, skills, lang }) => {
   let whereArr = [{ '$user.role$': ROLES.MENTOR.id }];
