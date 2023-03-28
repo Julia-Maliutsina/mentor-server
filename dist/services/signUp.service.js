@@ -1,13 +1,13 @@
 import bcrypt from 'bcryptjs';
 
-import User from '../db/models/user.ts';
-import Mentee from '../db/models/mentee.ts';
-import Mentor from '../db/models/mentor.ts';
-import ROLES from '../constants/roles.ts';
-import validateSignUpData from '../utils/validation/signUp.ts';
-import generateToken from '../utils/token/generateAuthToken.ts';
-import generateRegistrationToken from '../utils/token/generateRegToken.ts';
-import verifyToken from '../utils/token/verifyToken.ts';
+import User from '../db/models/user.js';
+import Mentee from '../db/models/mentee.js';
+import Mentor from '../db/models/mentor.js';
+import ROLES from '../constants/roles.js';
+import validateSignUpData from '../utils/validation/signUp.js';
+import generateToken from '../utils/token/generateAuthToken.js';
+import generateRegistrationToken from '../utils/token/generateRegToken.js';
+import verifyToken from '../utils/token/verifyToken.js';
 import sendVerificationEmail from '../nodemailer.js';
 
 const signup = async ({ email, password, name, lastName, role }) => {

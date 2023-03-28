@@ -1,8 +1,8 @@
 import bcrypt from 'bcryptjs';
 
-import User from '../db/models/user.ts';
-import generateToken from '../utils/token/generateAuthToken.ts';
-import ROLES from '../constants/roles.ts';
+import User from '../db/models/user.js';
+import generateToken from '../utils/token/generateAuthToken.js';
+import ROLES from '../constants/roles.js';
 
 const login = async ({ email, password }) => {
   if (!email || !password) {
