@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8880;
 const localhost = process.env.LOCAL_HOST || 'http://localhost:3000';
-const db_name = process.env.DB_DEV;
+const db_name = process.env.DB_TEST;
 const db_port = process.env.DB_PORT;
 const pg_pass = process.env.PG_PASS;
 const pg_user = process.env.PG_USER;
