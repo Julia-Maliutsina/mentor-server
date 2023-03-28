@@ -22,7 +22,8 @@ const validateSignUpData = (
   if (lastName.length < 2) {
     return { valid: false, message: 'Некорректная фамилия' };
   }
-  if (role !== ROLES.MENTEE.name && role !== ROLES.MENTOR.name) {
+  if (!(role === ROLES.MENTEE.name || role === ROLES.MENTOR.name)) {
+    console.log(role, ROLES.MENTOR.name, ROLES.MENTEE.name);
     return { valid: false, message: 'Некорректная роль пользователя' };
   }
   return { valid: true };
