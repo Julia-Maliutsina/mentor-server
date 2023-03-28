@@ -34,8 +34,6 @@ const User = sequelize.define(
     },
     cookie: DataTypes.STRING,
     cookie_expires_at: DataTypes.DATE,
-    createdAt: { type: DataTypes.DATE, field: 'created_at' },
-    updatedAt: { type: DataTypes.DATE, field: 'updated_at' },
   },
   {
     tableName: 'users',
