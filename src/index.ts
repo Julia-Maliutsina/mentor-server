@@ -22,7 +22,7 @@ const pg_user = process.env.PG_USER;
 
 const client = new Client({
   user: pg_user,
-  host: 'mentor-server-production.up.railway.app',
+  host: 'containers-us-west-49.railway.app',
   database: db_name,
   password: pg_pass,
   port: +db_port,
