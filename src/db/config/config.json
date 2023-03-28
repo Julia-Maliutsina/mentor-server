@@ -10,10 +10,10 @@
   "test": {
     "username": "postgres",
     "password": "1sm1RuPDb4af2eOcFK8B",
-    "database": "tmm_test_db",
+    "database": "railway",
     "host": "containers-us-west-49.railway.app",
     "dialect": "postgres",
-    "port": 5000
+    "port": 5881
   },
   "production": {
     "username": "postgres",
