@@ -1,0 +1,25 @@
+version: '3.0'
+
+services:
+  postgres:
+    container_name: ${CONTAINER_PREFIX}_postgres
+    image: postgres
+    restart: on-failure
+    build:
+      context: ./docker/postgres/postgis
+    ports:
+      - ${DB_PORT:-5432}:${DB_PORT:-5432}
+    volumes:
+      - ./docker/postgres/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${DB_DEV}
+      POSTGRES_PASSWORD: ${PG_PASS}
+      POSTGRES_USER: ${PG_USER}
+      TZ: 'Europe/Moscow'
+      PGTZ: 'Europe/Moscow'
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
