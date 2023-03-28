@@ -13,8 +13,8 @@ const localhost = process.env.LOCAL_HOST || 'http://localhost:3000';
 const client = new Client({
   user: 'postgres',
   host: 'localhost',
-  database: 'tmm_dev',
-  password: 'fed196cba',
+  database: 'railway',
+  password: '1sm1RuPDb4af2eOcFK8B',
   port: 5000,
 });
 
@@ -31,7 +31,7 @@ async function connectToDatabase() {
     await client.connect();
     console.log('Connected to DB');
     app.listen(port, () => {
-      console.log(`Server started on port: ${port}`);
+      console.log(`Server started on : ${port}`);
     });
   } catch (e) {
     console.log(e);
