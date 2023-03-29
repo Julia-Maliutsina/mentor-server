@@ -4,6 +4,7 @@ module.exports = {
       'users',
       [
         {
+          id: 1,
           email: 'user_mail@gmail.com',
           password: '$2a$08$5jmIzN3l.jieUhbb9E0z4OYu.uvA7k/2Z.D.rgDO8nEBtK5wPVsie',
           name: 'Егор',
@@ -12,6 +13,7 @@ module.exports = {
           role: 2,
         },
         {
+          id: 2,
           email: 'testUser1990@gmail.com',
           password: '$2a$08$5jmIzN3l.jieUhbb9E0z4OYu.uvA7k/2Z.D.rgDO8nEBtK5wPVsie',
           name: 'Иван',

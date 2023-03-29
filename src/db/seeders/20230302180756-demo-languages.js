@@ -4,9 +4,11 @@ module.exports = {
       'languages',
       [
         {
+          id: 1,
           language: 'Русский',
         },
         {
+          id: 2,
           language: 'English',
         },
       ],

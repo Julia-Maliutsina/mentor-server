@@ -7,7 +7,7 @@ module.exports = {
           id: 1,
           date: new Date('2023-05-17T09:24:00'),
           confirmed: true,
-          mentor_id: 2,
+          mentor_id: 1,
           mentee_id: 1,
         },
       ],
