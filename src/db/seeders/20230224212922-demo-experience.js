@@ -4,7 +4,6 @@ module.exports = {
       'experience',
       [
         {
-          id: 1,
           organization: 'Gravida Coffee',
           position: 'Бариста',
           from: new Date('2021-04-10'),
@@ -12,7 +11,6 @@ module.exports = {
           user_id: 1,
         },
         {
-          id: 2,
           organization: 'Prodamus',
           position: 'PHP разработчик',
           from: new Date('2011-12-08'),
@@ -20,7 +18,6 @@ module.exports = {
           user_id: 2,
         },
         {
-          id: 3,
           organization: 'Consectetur',
           position: 'PHP разработчик',
           from: new Date('2014-04-12'),
@@ -28,7 +25,6 @@ module.exports = {
           user_id: 2,
         },
         {
-          id: 4,
           organization: 'Consectetur',
           position: 'Middle Full-stack разработчик',
           from: new Date('2016-01-01'),

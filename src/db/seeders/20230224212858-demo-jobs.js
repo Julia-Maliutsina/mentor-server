@@ -4,13 +4,11 @@ module.exports = {
       'jobs',
       [
         {
-          id: 1,
           organization: 'Mauris',
           position: 'Стажёр',
           user_id: 1,
         },
         {
-          id: 2,
           organization: 'Consectetur',
           position: 'Tech lead, Senior Full-stack разработчик',
           user_id: 2,

@@ -4,7 +4,6 @@ module.exports = {
       'calls',
       [
         {
-          id: 1,
           date: new Date('2023-05-17T09:24:00'),
           confirmed: true,
           mentor_id: 1,
