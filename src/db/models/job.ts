@@ -20,11 +20,9 @@ const Job = sequelize.define(
   },
   {
     tableName: 'jobs',
-    //@ts-ignore
-    timestamps: {
-      createdAt: 'created_at',
-      updatedAt: 'updated_at',
-    },
+    timestamps: true,
+    underscored: true,
+    paranoid: false,
   },
 );
 export default Job;

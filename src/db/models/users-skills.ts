@@ -22,6 +22,7 @@ const UserSkill = sequelize.define(
   },
   {
     timestamps: false,
+    paranoid: false,
     tableName: 'users_skills',
   },
 );

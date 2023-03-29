@@ -21,9 +21,12 @@ const Call = sequelize.define(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    createdAt: { type: DataTypes.DATE, field: 'created_at' },
   },
   {
+    timestamps: true,
+    underscored: true,
+    updatedAt: false,
+    paranoid: false,
     tableName: 'calls',
   },
 );

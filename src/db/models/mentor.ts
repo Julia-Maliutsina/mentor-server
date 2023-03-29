@@ -21,11 +21,9 @@ const Mentor = sequelize.define(
     last_seen_online: DataTypes.DATE,
   },
   {
-    //@ts-ignore
-    timestamps: {
-      createdAt: 'created_at',
-      updatedAt: 'updated_at',
-    },
+    timestamps: true,
+    underscored: true,
+    paranoid: false,
     tableName: 'mentors',
   },
 );

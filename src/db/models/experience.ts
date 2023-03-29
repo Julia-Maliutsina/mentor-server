@@ -12,11 +12,9 @@ const Experience = sequelize.define(
   },
   {
     tableName: 'experience',
-    //@ts-ignore
-    timestamps: {
-      createdAt: 'created_at',
-      updatedAt: 'updated_at',
-    },
+    timestamps: true,
+    underscored: true,
+    paranoid: false,
   },
 );
 

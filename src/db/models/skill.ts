@@ -9,11 +9,10 @@ const Skill = sequelize.define(
   },
   {
     tableName: 'skills',
-    //@ts-ignore
-    timestamps: {
-      createdAt: 'created_at',
-      updatedAt: false,
-    },
+    timestamps: true,
+    underscored: true,
+    updatedAt: false,
+    paranoid: false,
   },
 );
 

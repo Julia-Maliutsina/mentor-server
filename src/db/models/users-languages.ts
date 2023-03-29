@@ -22,6 +22,7 @@ const UserLanguage = sequelize.define(
   },
   {
     timestamps: false,
+    paranoid: false,
     tableName: 'users_languages',
   },
 );

@@ -21,6 +21,7 @@ const Schedule = sequelize.define(
   },
   {
     timestamps: false,
+    paranoid: false,
     tableName: 'schedules',
   },
 );
