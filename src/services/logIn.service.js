@@ -17,7 +17,8 @@ const login = async ({ email, password }) => {
     return { status: 'error', message: 'Регистрация не завершена' };
   }
 
-  const validPassword = bcrypt.compare(password, user.password);
+  const validPassword = await bcrypt.compare(password, user.password);
+  console.log(validPassword, password, bcrypt.decodeBase64(user.password));
   if (!validPassword) {
     return { status: 'error', message: 'Неверный пароль' };
   }
