@@ -18,7 +18,8 @@ const login = async ({ email, password }) => {
   }
 
   const validPassword = await bcrypt.compare(password, user.password);
-  console.log(validPassword, password, bcrypt.decodeBase64(user.password));
+  const test = await bcrypt.hash(password, 8);
+  console.log(validPassword, password, user.password, test);
   if (!validPassword) {
     return { status: 'error', message: 'Неверный пароль' };
   }
